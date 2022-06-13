@@ -599,6 +599,33 @@
 .p-19 {
   padding: 190px; }
 
+.rounded-1 {
+  border-radius: 5px; }
+
+.rounded-2 {
+  border-radius: 10px; }
+
+.rounded-3 {
+  border-radius: 15px; }
+
+.rounded-4 {
+  border-radius: 20px; }
+
+.rounded-5 {
+  border-radius: 25px; }
+
+.rounded-6 {
+  border-radius: 30px; }
+
+.rounded-7 {
+  border-radius: 35px; }
+
+.rounded-8 {
+  border-radius: 40px; }
+
+.rounded-9 {
+  border-radius: 45px; }
+
 header {
   position: absolute;
   width: 100%; }
@@ -663,6 +690,48 @@ button {
         margin-left: auto;
         margin-right: auto;
         border-radius: 10px; }
+
+.aboutUs .gridLayout {
+  display: grid;
+  grid-template-columns: 30% 40% 30%; }
+
+.aboutUs .element {
+  width: 100%;
+  height: auto;
+  display: grid; }
+  .aboutUs .element .gridElement {
+    align-self: flex-end;
+    margin-left: 30px;
+    margin-right: 30px; }
+  .aboutUs .element img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .aboutUs .element .imgBlock {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: inline-flex; }
+    .aboutUs .element .imgBlock img {
+      align-self: flex-end;
+      object-fit: cover;
+      width: 45%;
+      height: 25vh;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto; }
+
+.aboutUs .elementTall {
+  width: 100%; }
+  .aboutUs .elementTall img {
+    width: 65%;
+    height: 60vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    object-fit: cover; }
 
 .miniaturesGridLayout {
   display: grid;
