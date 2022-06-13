@@ -1,0 +1,22 @@
+
+@for $var from 0 to 20 {
+    .mt-#{$var}{
+        margin-top: $var * 10px;
+    }
+
+    .mb-#{$var}{
+        margin-bottom: $var * 10px;
+    }
+
+    .ml-#{$var}{
+        margin-left: $var * 10px;
+    }
+
+    .mr-#{$var}{
+        margin-right: $var * 10px;
+    }
+
+    .m-#{$var}{
+        margin: $var * 10px;
+    }
+}

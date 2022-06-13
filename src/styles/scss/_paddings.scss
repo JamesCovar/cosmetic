@@ -1,0 +1,22 @@
+
+@for $var from 0 to 20 {
+    .pt-#{$var}{
+        padding-top: $var * 10px;
+    }
+
+    .pb-#{$var}{
+        padding-bottom: $var * 10px;
+    }
+
+    .pl-#{$var}{
+        padding-left: $var * 10px;
+    }
+
+    .pr-#{$var}{
+        padding-right: $var * 10px;
+    }
+
+    .p-#{$var}{
+        padding: $var * 10px;
+    }
+}
