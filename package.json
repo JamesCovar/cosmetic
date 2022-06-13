@@ -1,0 +1,24 @@
+{
+  "name": "cosmetic",
+  "version": "1.0.0",
+  "description": "Costmetic Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss ./src/styles/scss/main.scss ./src/styles/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesCovar/cosmetic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesCovar/cosmetic/issues"
+  },
+  "homepage": "https://github.com/JamesCovar/cosmetic#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
