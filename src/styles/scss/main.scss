@@ -34,7 +34,8 @@ header{
 
 
 body{
-    margin:0
+    margin:0;
+    width:100%;
 }
 
 h1{
@@ -90,6 +91,10 @@ button{
                 margin-right: auto;
                 border-radius: 10px;
             }
+        }
+
+        .right{
+            @extend .left
         }
     }
 }
@@ -185,6 +190,7 @@ button{
 .testiomonials{
     display: grid;
     grid-template-columns: 50% 50%;
+    max-width: 100%;
    
     img{
         object-fit:cover;
@@ -208,6 +214,7 @@ button{
 }
 
 .followInstragram{
+    max-width: 100%;
     background-color: #FFF1E4;
     text-align: center;
     padding-top: 70px;
@@ -216,7 +223,7 @@ button{
 
     .gridLayout{
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
         .imgCard{
             margin-left: 20px;
             justify-self: center;
@@ -306,4 +313,67 @@ button{
 
 .d-inline{
     display: inline-block;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .followInstragram{
+    
+        .gridLayout{
+            grid-template-columns: auto auto auto auto;
+        }
+    }
+
+    .aboutUs{
+        .gridLayout{
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            
+        }
+        .element{
+            width: 100%;
+            height: auto;
+            display: grid;
+
+    
+            img{
+                width: 90%;
+                height: 80vh;
+                object-fit: cover;    
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+        }
+    }
+
+    header{
+        .logo{
+            width: 35%;
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .principal{
+        width: 100%;
+        background-color: #fff9f4;
+        margin: 0;
+        .gridLayout{
+            grid-template-columns: 85%;
+            .left{
+                order:2
+            }
+            .right{
+                margin-left: 70px;
+                order: 1;
+                .halfWidth{
+                    height: 20vh;
+                    width: 100%;
+                }
+
+            }
+        }
+    }
 }

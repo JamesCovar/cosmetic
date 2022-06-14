@@ -718,7 +718,8 @@ header {
     color: #DF7023; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  width: 100%; }
 
 h1 {
   font-family: 'Poppins',sans-serif;
@@ -755,10 +756,10 @@ button {
   .principal .gridLayout {
     display: grid;
     grid-template-columns: 50% 50%; }
-    .principal .gridLayout .left {
+    .principal .gridLayout .left, .principal .gridLayout .right {
       width: 100%;
       height: 100%; }
-      .principal .gridLayout .left .halfWidth {
+      .principal .gridLayout .left .halfWidth, .principal .gridLayout .right .halfWidth {
         width: 65%;
         height: 85vh;
         object-fit: cover;
@@ -828,7 +829,8 @@ button {
 
 .testiomonials {
   display: grid;
-  grid-template-columns: 50% 50%; }
+  grid-template-columns: 50% 50%;
+  max-width: 100%; }
   .testiomonials img {
     object-fit: cover;
     height: 80vh;
@@ -845,6 +847,7 @@ button {
     width: 75%; }
 
 .followInstragram {
+  max-width: 100%;
   background-color: #FFF1E4;
   text-align: center;
   padding-top: 70px;
@@ -852,7 +855,7 @@ button {
   justify-content: center; }
   .followInstragram .gridLayout {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto; }
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto; }
     .followInstragram .gridLayout .imgCard {
       margin-left: 20px;
       justify-self: center; }
@@ -916,3 +919,39 @@ button {
 
 .d-inline {
   display: inline-block; }
+
+@media screen and (max-width: 1200px) {
+  .followInstragram .gridLayout {
+    grid-template-columns: auto auto auto auto; }
+  .aboutUs .gridLayout {
+    display: grid;
+    grid-template-columns: 30% 30% 30%; }
+  .aboutUs .element {
+    width: 100%;
+    height: auto;
+    display: grid; }
+    .aboutUs .element img {
+      width: 90%;
+      height: 80vh;
+      object-fit: cover;
+      margin-left: auto;
+      margin-right: auto;
+      display: block; }
+  header .logo {
+    width: 35%; } }
+
+@media screen and (max-width: 900px) {
+  .principal {
+    width: 100%;
+    background-color: #fff9f4;
+    margin: 0; }
+    .principal .gridLayout {
+      grid-template-columns: 85%; }
+      .principal .gridLayout .left, .principal .gridLayout .right {
+        order: 2; }
+      .principal .gridLayout .right {
+        margin-left: 70px;
+        order: 1; }
+        .principal .gridLayout .right .halfWidth {
+          height: 20vh;
+          width: 100%; } }
