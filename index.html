@@ -65,7 +65,7 @@
                         prematuro. Tenemos más de 5 aromas diferentes
                     </span>
                     <br><br>
-                    <button>Ver productos</button>
+                    <button onclick="internalLink('src/pages/products.html')">Ver productos</button>
                 </div>
                 <div class="imgBlock">
                     <img class="rounded-2" src="./src/imgs/cream/crema.png" alt="">
@@ -150,8 +150,18 @@
             </div>
         </div>
         <div>
-            <button class="mt-5">Siguenos</button>
+            <button class="mt-5" onclick="externalLink('https://instagram.com')" >Siguenos</button>
         </div>
     </section>
+
+    <script>
+        function externalLink(url){
+            window.open(url);
+        }
+
+        function internalLink(url){
+            window.location.href = url;
+        }
+    </script>
 </body>
 </html>
