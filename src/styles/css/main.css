@@ -683,6 +683,21 @@
 .w-95 {
   width: 95%; }
 
+.bg-frenchViolet {
+  background-color: #6F2DBD; }
+
+.bg-amethyst {
+  background-color: #A663CC; }
+
+.bg-wisteria {
+  background-color: #B298DC; }
+
+.bg-lightSteelBlue {
+  background-color: #B8D0EB; }
+
+.bg-celeste {
+  background-color: #B9FAF8; }
+
 header {
   position: absolute;
   width: 100%; }
@@ -698,6 +713,9 @@ header {
   header li {
     display: inline-flex;
     margin-left: 50px; }
+  header .resalt {
+    font-weight: 500;
+    color: #DF7023; }
 
 body {
   margin: 0; }
@@ -723,8 +741,9 @@ button {
   background-color: #ee975b;
   border: none;
   border-radius: 5px;
-  padding: 8px 15px 8px 15px;
-  color: white; }
+  padding: 12px 23px 12px 23px;
+  color: white;
+  font-size: 1.3rem; }
   button:hover {
     background-color: #DF7023;
     font-weight: 500; }
@@ -807,13 +826,72 @@ button {
       height: 70px;
       object-fit: cover; }
 
-.testiomonials img {
-  object-fit: cover;
-  height: 80vh;
-  width: 70%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+.testiomonials {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+  .testiomonials img {
+    object-fit: cover;
+    height: 80vh;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .testiomonials .name {
+    font-weight: 500; }
+  .testiomonials .testimonialContainer {
+    background-color: #FFF1E4;
+    padding: 20px 40px 20px 40px;
+    align-content: center;
+    width: 75%; }
+
+.followInstragram {
+  background-color: #FFF1E4;
+  text-align: center;
+  padding-top: 70px;
+  display: grid;
+  justify-content: center; }
+  .followInstragram .gridLayout {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto; }
+    .followInstragram .gridLayout .imgCard {
+      margin-left: 20px;
+      justify-self: center; }
+      .followInstragram .gridLayout .imgCard img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 140px;
+        height: 140px;
+        object-fit: cover; }
+
+.products .gridLayout {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  margin-left: 20px;
+  margin-right: 10px; }
+  .products .gridLayout .element {
+    display: block;
+    align-content: center;
+    max-width: 300px;
+    border: 1px solid black;
+    margin-top: 50px; }
+    .products .gridLayout .element .colorPalette {
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      vertical-align: middle; }
+    .products .gridLayout .element .title {
+      max-width: 250px;
+      height: auto;
+      display: inline-block;
+      vertical-align: middle; }
+  .products .gridLayout h4 {
+    font-size: 1.2rem;
+    font-family: 'Poppins',sans-serif;
+    margin: 0px 0px 0px 0px; }
+  .products .gridLayout img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; }
 
 .d-inline {
   display: inline-block; }

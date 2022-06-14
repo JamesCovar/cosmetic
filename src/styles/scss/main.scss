@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,100&display=swap');
 @import './rounded';
 @import './widths';
+@import './colors';
 
 $colors:('cream':#ee975b);
 
@@ -24,6 +25,10 @@ header{
     li{
         display: inline-flex;
         margin-left: 50px;
+    }
+    .resalt{
+        font-weight: 500;
+        color: #DF7023;
     }
 }
 
@@ -55,8 +60,9 @@ button{
     background-color: #ee975b;
     border: none;
     border-radius: 5px;
-    padding: 8px 15px 8px 15px;
+    padding: 12px 23px 12px 23px;
     color:white;
+    font-size: 1.3rem;
 
     &:hover{
         background-color: #DF7023;
@@ -177,6 +183,9 @@ button{
 }
 
 .testiomonials{
+    display: grid;
+    grid-template-columns: 50% 50%;
+   
     img{
         object-fit:cover;
         height: 80vh;
@@ -186,6 +195,86 @@ button{
         margin-right: auto;
         
     }
+    .name{
+        font-weight: 500;
+    }
+
+    .testimonialContainer{
+        background-color: #FFF1E4;
+        padding: 20px 40px 20px 40px;   
+        align-content: center;
+        width: 75%;
+    }
+}
+
+.followInstragram{
+    background-color: #FFF1E4;
+    text-align: center;
+    padding-top: 70px;
+    display: grid;
+    justify-content: center;
+
+    .gridLayout{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        .imgCard{
+            margin-left: 20px;
+            justify-self: center;
+            img{
+                margin-left: auto;
+                margin-right: auto;
+                width: 140px;
+                height: 140px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.products{
+    
+    .gridLayout{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto ;
+        margin-left: 20px;
+        margin-right: 10px;
+        
+        .element{
+            display: block;
+            align-content: center;
+            max-width: 300px;
+            border:1px solid black;
+            margin-top: 50px;
+            .colorPalette{
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .title{
+                max-width: 250px;
+                height: auto;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+
+        h4{
+            font-size: 1.2rem;
+            font-family: 'Poppins',sans-serif;
+            margin: 0px 0px 0px 0px;
+
+        }
+
+        img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+
+
 }
 
 .d-inline{

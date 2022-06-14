@@ -1,0 +1,7 @@
+$colors: ('frenchViolet':#6F2DBD,'amethyst':#A663CC,'wisteria':#B298DC, 'lightSteelBlue':#B8D0EB,'celeste':#B9FAF8);
+
+@each $color, $code in $colors {
+    .bg-#{$color}{
+        background-color: $code;
+    }
+}
