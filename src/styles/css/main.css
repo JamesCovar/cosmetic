@@ -893,5 +893,26 @@ button {
     height: 300px;
     object-fit: cover; }
 
+.categories .card {
+  width: 300px;
+  border: 1px solid black; }
+  .categories .card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0; }
+  .categories .card h1 {
+    margin: 0; }
+  .categories .card .title {
+    width: 300px;
+    height: 10vh;
+    justify-content: center;
+    display: flex;
+    align-items: center; }
+
+.categories .gridLayout {
+  display: grid;
+  grid-template-columns: auto auto auto auto; }
+
 .d-inline {
   display: inline-block; }
