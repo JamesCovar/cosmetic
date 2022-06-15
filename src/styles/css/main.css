@@ -940,11 +940,12 @@ button {
   header .logo {
     width: 35%; } }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .principal {
     width: 100%;
     background-color: #fff9f4;
-    margin: 0; }
+    margin: 0;
+    padding-bottom: 50px; }
     .principal .gridLayout {
       grid-template-columns: 85%; }
       .principal .gridLayout .left, .principal .gridLayout .right {
@@ -954,4 +955,60 @@ button {
         order: 1; }
         .principal .gridLayout .right .halfWidth {
           height: 20vh;
-          width: 100%; } }
+          width: 100%; }
+  header .logo {
+    width: 15%; }
+  .aboutUs .gridLayout {
+    display: grid;
+    grid-template-columns: 50% 0% 50%; }
+  .aboutUs .element {
+    width: 100%;
+    height: auto;
+    display: grid; }
+    .aboutUs .element img {
+      width: 90%;
+      height: 80vh;
+      object-fit: cover;
+      margin-left: auto;
+      margin-right: auto;
+      display: none; } }
+
+@media screen and (max-width: 650px) {
+  .aboutUs .gridLayout {
+    display: grid;
+    grid-template-columns: 100%; }
+    .aboutUs .gridLayout .third span {
+      display: none; }
+    .aboutUs .gridLayout .third img {
+      display: none; }
+    .aboutUs .gridLayout .third button {
+      display: block;
+      width: 100%;
+      margin: 0; }
+  .followInstragram {
+    padding-top: 30px; }
+    .followInstragram .gridLayout {
+      display: grid;
+      grid-template-columns: auto auto auto; }
+  .testiomonials {
+    grid-template-columns: 90%;
+    margin-left: 40px;
+    margin-top: 10px; }
+    .testiomonials .testimonialImg {
+      display: none; }
+    .testiomonials .testimonialContainer {
+      margin-top: 15px; } }
+
+@media screen and (max-width: 500px) {
+  .followInstragram {
+    padding-top: 30px; }
+    .followInstragram .gridLayout {
+      display: grid;
+      grid-template-columns: auto auto; }
+  .aboutUs .gridLayout {
+    margin-left: 15px; }
+    .aboutUs .gridLayout .gridElement {
+      margin-left: 0; }
+    .aboutUs .gridLayout .imgBlock {
+      text-align: left;
+      display: block; } }

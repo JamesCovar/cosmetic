@@ -355,11 +355,12 @@ button{
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:950px) {
     .principal{
         width: 100%;
         background-color: #fff9f4;
         margin: 0;
+        padding-bottom: 50px;
         .gridLayout{
             grid-template-columns: 85%;
             .left{
@@ -373,6 +374,106 @@ button{
                     width: 100%;
                 }
 
+            }
+        }
+    }
+
+    header{
+        .logo{
+            width: 15%;
+        }
+    }
+
+    .aboutUs{
+        .gridLayout{
+            display: grid;
+            grid-template-columns: 50% 0% 50%;
+            
+        }
+        .element{
+            width: 100%;
+            height: auto;
+            display: grid;
+
+    
+            img{
+                width: 90%;
+                height: 80vh;
+                object-fit: cover;    
+                margin-left: auto;
+                margin-right: auto;
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px){
+    .aboutUs{
+        .gridLayout{
+            display: grid;
+            grid-template-columns: 100%;
+
+            .third{
+                span{
+                    display: none;
+                }
+                img{
+                    display: none;
+                }
+                button{
+                    display: block;
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    
+    }
+
+
+    .followInstragram{
+        padding-top: 30px;
+    
+        .gridLayout{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            
+        }
+    }
+
+    .testiomonials{
+        grid-template-columns: 90%;
+        margin-left: 40px;
+        margin-top: 10px;
+        .testimonialImg{
+            display: none;
+        }
+        .testimonialContainer{
+            margin-top:15px;
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    .followInstragram{
+        padding-top: 30px;
+    
+        .gridLayout{
+            display: grid;
+            grid-template-columns: auto auto;
+            
+        }
+    }
+    .aboutUs{
+        .gridLayout {
+            margin-left: 15px;
+            .gridElement{
+                margin-left: 0;
+            }
+            .imgBlock{
+                text-align: left;
+                display: block;
             }
         }
     }
